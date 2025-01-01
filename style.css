@@ -1,5 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* Makes everything flexbox
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    */
 }
 
 button {
@@ -13,6 +20,13 @@ button {
     color: #F9FAF8
 }
 
+.header {
+    display: flex;
+    padding: 16px;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .header .left {
     font-size: 24px;
 }
@@ -22,9 +36,24 @@ button {
     color: #E5E7EB;
 }
 
+.first {
+    flex: auto;
+    display: flex;
+    gap: 16px;
+    padding: 64px;
+}
+
 #big-text {
     font-weight: 900;
     font-size: 48px;
+}
+
+.right {
+    flex: auto;
+}
+
+.second {
+    flex: auto;
 }
 
 .second .top {
@@ -33,8 +62,13 @@ button {
     font-weight: 900;
 }
 
+.second .bottom {
+    display: flex;
+}
+
 .third {
     background-color: #E5E7EB;
+    flex: auto;
 }
 
 .third .top {
@@ -47,10 +81,16 @@ button {
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 6px;
+    flex: auto;
 }
 
 #sign-up {
     border-width: 2px;
     border-radius: 6px;
     border-color: #F9FAF8;
+}
+
+.footer {
+    padding: 25px;
+    text-align: center;
 }
